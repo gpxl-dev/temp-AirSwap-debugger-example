@@ -10,8 +10,7 @@ import { ReactNode } from "react";
 const queryClient = new QueryClient();
 
 // 1. Get projectId at https://cloud.walletconnect.com
-// FIXME: update with real value
-const projectId = "YOUR_PROJECT_ID";
+const projectId = import.meta.env.VITE_WALLET_CONNECT_PROJECT_ID;
 
 // 2. Create wagmiConfig
 const metadata = {
