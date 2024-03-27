@@ -1,7 +1,6 @@
 import { Button } from "@/features/ui/button";
 import { useState } from "react";
 import { cn } from "./lib/utils";
-import { useCheckOrder } from "./useCheckOrder";
 import { useValidateOrder } from "./useValidateOrder";
 
 function App() {
@@ -23,13 +22,6 @@ function App() {
     onSetChain: (newId) => {
       if (selectedChainId !== newId) setselectedChainId(newId);
     },
-  });
-
-  console.log({
-    orderErrors,
-    contractCallError,
-    orderParsingError,
-    schemaValidationError,
   });
 
   return (
